@@ -3,8 +3,9 @@ $(document).ready(function() {
 	$( '#key' ).click(function() {
     var link = $( '#baseLink' ).val();
     var key = $( '#apiKey' ).val();
+    var vel = $( '#Velocity' ).val();
     console.log(link + key); 
-    $("#key").attr("disabled", true);
+    // $("#key").attr("disabled", true);
 
     // Fetch data from airtable 
 	   	
@@ -14,9 +15,9 @@ $(document).ready(function() {
 	       data: {
 	           "api_key": key, //keycGQqA0T3nBwQay
 	       },
-	   		/*   headers: {
-	           "Cookie": "AWSALB=A1wexWjIQLVw5QWo5kKTUNY7yd1vt4E3VnGLvwidH+WcRfYPrA8qklJhNBMvV/TLq0JzPV24tjtH2na6QDlxxuDRIJL3j3vHjysDsGKvwV5TCMhYfvkjr1ugCDxw",
-	       }, */
+	   		  //  headers: {
+	       //     "Cookie": "AWSALB=A1wexWjIQLVw5QWo5kKTUNY7yd1vt4E3VnGLvwidH+WcRfYPrA8qklJhNBMvV/TLq0JzPV24tjtH2na6QDlxxuDRIJL3j3vHjysDsGKvwV5TCMhYfvkjr1ugCDxw",
+	       // }, 
 	   	})
 	   	.done(function(data, textStatus, jqXHR) {
 	       console.log("HTTP Request Succeeded: " + jqXHR.status);
@@ -28,7 +29,7 @@ $(document).ready(function() {
 	         console.log(data.records[i].fields.name);
 	         console.log(data.records[i].id);
 	         $("#records").append(
-	           "<div class='story' style='width: " + data.records[i].fields.points + "%;'><div> Story: " 
+	           "<div class='story' style='width: " + (data.records[i].fields.points/vel)*100 + "%;'><div> Story: " 
 	           + data.records[i].fields.story + 
 	           "</div><div>Points: " 
 	           + data.records[i].fields.points + 
@@ -42,6 +43,7 @@ $(document).ready(function() {
 	   })
 	   .fail(function(jqXHR, textStatus, errorThrown) {
 	       console.log("HTTP Request Failed");
+	       "ERROR"
 	   })
 	   .always(function() {
 	       /* ... */
