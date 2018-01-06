@@ -2,8 +2,9 @@
 <html>
 <head>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
 <script src="main.js"></script>
 </head>
 
@@ -21,9 +22,9 @@
 	<h2>Sprint planner</h2>
 	<p>Input Airtable base link and API key to create cards</p>
 <!-- 	<form id="keyForm"> -->
-	AirTable base link 
-	<input id="baseLink">
-	AirTable API
+	AirTable API Base Link
+	<input id="baseLink" data-toggle="tooltip" data-placement="top" title="Begins with https://api.airtable...">
+	AirTable API Key
 	<input id="apiKey">
 	Velocity
 	<input id="Velocity">

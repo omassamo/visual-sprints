@@ -1,11 +1,18 @@
 $(document).ready(function() {
 
+	$( '#baseLink' ).focus(function(){
+		console.log("FOCUS");
+		$('#baseLink').tooltip('show');
+	});
+
+	//Passes values from inputs to vars
+
 	$( '#key' ).click(function() {
-    var link = $( '#baseLink' ).val();
-    var key = $( '#apiKey' ).val();
-    var vel = $( '#Velocity' ).val();
-    console.log(link + key); 
-    // $("#key").attr("disabled", true);
+	    var link = $( '#baseLink' ).val();
+	    var key = $( '#apiKey' ).val();
+	    var vel = $( '#Velocity' ).val();
+	    console.log(link + key); 
+	    $("#key").attr("disabled", true);
 
     // Fetch data from airtable 
 	   	
@@ -29,7 +36,7 @@ $(document).ready(function() {
 	         console.log(data.records[i].fields.name);
 	         console.log(data.records[i].id);
 	         $("#records").append(
-	           "<div class='story' style='width: " + (data.records[i].fields.points/vel)*100 + "%;'><div> Story: " 
+	           "<div class='story' style='width: " + (data.records[i].fields.points/vel)*100 + "%;'><div>" 
 	           + data.records[i].fields.story + 
 	           "</div><div>Points: " 
 	           + data.records[i].fields.points + 
