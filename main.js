@@ -39,10 +39,10 @@ $(document).ready(function() {
 	           "<div class='story' style='width: " + (data.records[i].fields.points/vel)*100 + "%;'><div>" 
 	           + data.records[i].fields.story + 
 	           "</div><div>Points: " 
-	           + data.records[i].fields.points + 
-	           "</div><div>Description: " 
-	           + data.records[i].fields.description +
-	           "</div></div>"
+	           + data.records[i].fields.points  
+	           // + "</div><div>Description: " 
+	           // + data.records[i].fields.description +
+	           // "</div></div>"
 	           );
 
 	       	})

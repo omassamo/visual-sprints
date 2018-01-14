@@ -1,3 +1,6 @@
+body {
+	background-image:url("background.jpg");
+}
 .story {
     -webkit-box-shadow:inset 0px 0px 0px 2px #000;
     -moz-box-shadow:inset 0px 0px 0px 2px #000;
@@ -5,4 +8,6 @@
 	display:inline-block;
 	padding:3px;
 	min-height: 105px;
+	margin-top: 5px;
+	margin-top: 5px;
 }
