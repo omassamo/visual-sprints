@@ -1,13 +1,32 @@
-body {
+/*body {
 	background-image:url("background.jpg");
-}
+}*/
 .story {
     -webkit-box-shadow:inset 0px 0px 0px 2px #000;
     -moz-box-shadow:inset 0px 0px 0px 2px #000;
     box-shadow:inset 0px 0px 0px 2px #000;
 	display:inline-block;
-	padding:3px;
+	padding:5px;
 	min-height: 105px;
-	margin-top: 5px;
-	margin-top: 5px;
+	margin-top: 15px;
+}
+
+.field {
+min-height: 30px;
+}
+
+.button.top-elm{
+margin-top: 20px;
+}
+
+.top {
+	background-color: #eee;
+}
+
+.menu{
+	margin-top: 15px;
+}
+
+.onboarding {
+	margin: 10% 0px 0px 15%;
 }

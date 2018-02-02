@@ -4,37 +4,39 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<title>Visual Sprint Planner</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="styles.css">
 <script src="main.js"></script>
 </head>
 
 <body>
+<div class="top">
+	<div class="container">
+		<div class="row menu text-center">
+			<div class="col-md-3">
+			<p>AirTable API Base Link</p>
+			<input class="field top-elm" id="baseLink" data-toggle="tooltip" data-placement="top" title="Begins with https://api.airtable...">
+			</div>
+			<div class="col-md-3">
+			<p>AirTable API Key</p>
+			<input class="field top-elm" id="apiKey">
+			</div>
+			<div class="col-md-3">
+			<p>Team Velocity</p>
+			<input class="field top-elm" id="Velocity">
+			</div>
+			<div class="col-md-3">
+			<button class="button btn-lg btn-success top-elm" id="key">Get cards</button></br></br>
+			</div>
+		</div>
+	</div>	
+</div>	
 
 <div class="container">
-
-<!-- 	<form>
-	    Type something in here:
-	    <input id="example1" type="text" />
-	    <input type="button" value="Show Value"/>
-	</form> -->
-
-
-	<h2>Sprint planner</h2>
-	<p>Input Airtable base link and API key to create cards</p>
-<!-- 	<form id="keyForm"> -->
-	AirTable API Base Link
-	<input id="baseLink" data-toggle="tooltip" data-placement="top" title="Begins with https://api.airtable...">
-	AirTable API Key
-	<input id="apiKey">
-	Velocity
-	<input id="Velocity">
-	<button id="key">Get cards</button></br></br>
-<!-- 	</form> -->
-<!-- 	<p id=""><a target="_blank" href="https://airtable.com/tblK3dlWBTP69Mij5/viwxKUHyD3pBkUiap">Add items to backlog to see cards</a></p> -->
 	<div id="records" class="row">	
+	<div class="onboarding col-md-8" id="onb" ><h3>Hi 👋👋<br><br> Input Airtable base link, API key and velocity to create user story cards ...<br><br>Each row represents a sprint. <br><br>The visual sprint planner 💻</h3></div>					
 	</div>
-	<p id="description"></p>
-	<div id="items"></div>
 </div>
 
 </body>
