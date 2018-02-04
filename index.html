@@ -13,20 +13,20 @@
 <body>
 <div class="top">
 	<div class="container">
-		<div class="row menu text-center">
-			<div class="col-md-3">
+		<div class="row menu">
+			<div class="col-md-2">
 			<p>AirTable API Base Link</p>
 			<input class="field top-elm" id="baseLink" data-toggle="tooltip" data-placement="top" title="Begins with https://api.airtable...">
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-2">
 			<p>AirTable API Key</p>
 			<input class="field top-elm" id="apiKey">
 			</div>
-			<div class="col-md-3">
-			<p>Team Velocity</p>
+			<div class="col-md-2">
+			<p>Team Velocity<p>
 			<input class="field top-elm" id="Velocity">
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-2">
 			<button class="button btn-lg btn-success top-elm" id="key">Get cards</button></br></br>
 			</div>
 		</div>
@@ -36,6 +36,19 @@
 <div class="container">
 	<div id="records" class="row">	
 	<div class="onboarding col-md-8" id="onb" ><h3>Hi 👋👋<br><br>Mundi is visual sprint planning for teams who manage their backlog in Airtable. <br><br>Input Airtable base link, API key and velocity to create user story cards and get a sprint on each row. 💻</h3>			
+	
+<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	        <h4 class="modal-title" id="myModalLabel">Story</h4>
+	      </div>
+	      <div class="modal-body">
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </div>
 
